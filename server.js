@@ -8,5 +8,5 @@ app.listen(port, function () {
 })
 
 app.get('/', function (req, res) {
-  res.json({ hello: 'basketrash!' });
+  res.json({ hello: 'basketrash :D' });
 });

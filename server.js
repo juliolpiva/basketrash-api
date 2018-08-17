@@ -1,10 +1,12 @@
 var express = require('express');
 var app = express();
 
-app.get('/', function (req, res) {
-  res.send('Hello Basketrash!');
-});
+port = process.env.PORT || 3000;
 
-app.listen(3000, function () {
+app.listen(port, function () {
   console.log('Basketrash running on port 3000!');
 })
+
+app.get('/', function (req, res) {
+  res.json({ hello: 'basketrash!' });
+});

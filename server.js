@@ -1,12 +1,17 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const bodyParser = require('body-parser');
+const routes = require('./routes/routes.js');
 
-port = process.env.PORT || 3000;
+const app = express();
 
-app.listen(port, function () {
+const port = process.env.PORT || 3000;
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+routes(app);
+
+const server = app.listen(port, () => {
   console.log('Basketrash running on port 3000!');
-})
-
-app.get('/', function (req, res) {
-  res.json({ hello: 'basketrash :D' });
 });
+

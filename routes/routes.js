@@ -1,19 +1,20 @@
 const faker = require('faker');
+const team = require('./team');
+const season = require('./season');
+const match = require('./match');
+const event = require('./event');
+const user = require('./user');
 
 const appRouter = (app) => {
   app.get('/', (req, res) => {
     res.status(200).send({ message: 'Welcome to our restful API' });
   });
 
-  app.get('/user', (req, res) => {
-    const data = ({
-      firstName: faker.name.firstName(),
-      lastName: faker.name.lastName(),
-      username: faker.internet.userName(),
-      email: faker.internet.email(),
-    });
-    res.status(200).send(data);
-  });
+  app.get('/user', user);
+  app.get('/team', team);
+  app.get('/season', season);
+  app.get('/match', match);
+  app.get('/event', event);
 
   app.get('/users/:num', (req, res) => {
     const users = [];
@@ -35,5 +36,6 @@ const appRouter = (app) => {
     }
   });
 };
+
 
 module.exports = appRouter;

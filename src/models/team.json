@@ -1,0 +1,31 @@
+{
+  "teams": [
+    {
+      "name": "Dynamox",
+      "slug": "dynamox",
+      "address": "Florianópolis - SC, Brasil",
+      "seasons": [
+        {
+          "slug": "2018/1",
+          "initialDate": "2018-02-01T00:00:00Z",
+          "finalDate": "2018-06-30T23:59:00Z",
+          "duration": "5 mounths",
+          "matches": [
+            {
+              "name": "stoic_panini",
+              "datetime": "2018-03-13T15:30:00-03:00",
+              "wind": 0,
+              "rain": false
+            },
+            {
+              "name": "dazzling_banach",
+              "datetime": "2018-03-14T15:30:00-03:00",
+              "wind": 0,
+              "rain": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

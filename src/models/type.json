@@ -1,0 +1,54 @@
+[
+    {
+      "type": "Score",
+      "description": "Self explanatory"
+    },
+    {
+      "type": "1Shot1Kill",
+      "description": "make a basket on the first shot"
+    },
+    {
+      "type": "FoodDerruber",
+      "description": "Self explanatory"
+    },
+    {
+      "type": "LastChanceShot",
+      "description": "make a basket on the last shot"
+    },
+    {
+      "type": "BackFromDeath",
+      "description": "After 2 months or more, make a basket"
+    },
+    {
+      "type": "Dribrador",
+      "description": "Give a 'caneta' on anyone (including your team) or another 'dribre'"
+    },
+    {
+      "type": "AirColider",
+      "description": "2 balls chocking in the air, one for each side"
+    },
+    {
+      "type": "FieldGoal",
+      "description": "when a player shot a 'BICUDA' and send the ball to the 'MEIO DO MATO'"
+    },
+    {
+      "type": "HeadShoter",
+      "description": "when a player shot a 'CABEÇÃO'of another 'COLEGUINHA'"
+    },
+    {
+      "type": "Hattrick",
+      "description": "three scores"
+    },
+    {
+      "type": "Double Wonder",
+      "description": "two scores"
+    },
+    {
+      "type": "AyrtonSenna",
+      "description": "score on a weather floor"
+    },
+    {
+      "type": "HandNeta",
+      "description": "applys a 'caneta' using hands"
+    }
+  ]

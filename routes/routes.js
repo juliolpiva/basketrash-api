@@ -4,6 +4,7 @@ const season = require('./season');
 const match = require('./match');
 const event = require('./event');
 const user = require('./user');
+const ranking = require('./ranking');
 
 const appRouter = (app) => {
   app.get('/', (req, res) => {
@@ -15,7 +16,7 @@ const appRouter = (app) => {
   app.get('/season', season);
   app.get('/match', match);
   app.get('/event', event);
-
+  app.get('/ranking', ranking);
   app.get('/users/:num', (req, res) => {
     const users = [];
     const { num } = req.params;

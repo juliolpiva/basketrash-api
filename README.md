@@ -8,3 +8,4 @@ The back-end for basketrash mobile app!
 /season
 /match
 /event
+/ranking

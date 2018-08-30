@@ -2,7 +2,7 @@
 const faker = require('faker');
 const moment = require('moment');
 
-const match = (req, res) => {
+const matchGet = (req, res) => {
   const name = faker.lorem.slug();
 
   const data = ({
@@ -14,6 +14,15 @@ const match = (req, res) => {
     team: 'chanfles',
   });
   res.status(200).send(data);
+};
+
+const matchPost = (req, res) => {
+  res.status(200).send(req.body);
+};
+
+const match = (app, url) => {
+  app.get(url, matchGet);
+  app.post(url, matchPost);
 };
 
 module.exports = match;

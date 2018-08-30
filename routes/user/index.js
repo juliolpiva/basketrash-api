@@ -1,7 +1,8 @@
 
 const faker = require('faker');
 
-const user = (req, res) => {
+
+const userGet = (req, res) => {
   const data = ({
     firstName: faker.name.firstName(),
     lastName: faker.name.lastName(),
@@ -10,6 +11,15 @@ const user = (req, res) => {
     team: 'chanfles',
   });
   res.status(200).send(data);
+};
+
+const userPost = (req, res) => {
+  res.status(200).send(req.body);
+};
+
+const user = (app, url) => {
+  app.get(url, userGet);
+  app.post(url, userPost);
 };
 
 module.exports = user;

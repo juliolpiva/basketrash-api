@@ -2,7 +2,7 @@
 const faker = require('faker');
 const moment = require('moment');
 
-const event = (req, res) => {
+const eventsGet = (req, res) => {
   const agent = faker.internet.email();
   const type = 'Score';
 
@@ -16,8 +16,17 @@ const event = (req, res) => {
     team: 'chanfles',
     match: 'chanfles',
   });
-  
+
   res.status(200).send(data);
 };
 
-module.exports = event;
+const eventsPost = (req, res) => {
+  res.status(200).send(req.body);
+};
+
+const events = (app, url) => {
+  app.get(url, eventsGet);
+  app.post(url, eventsPost);
+};
+
+module.exports = events;

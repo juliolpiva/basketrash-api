@@ -1,4 +1,3 @@
-
 const moment = require('moment');
 const Duration = require('duration-js');
 

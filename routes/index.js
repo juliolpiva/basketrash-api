@@ -1,4 +1,3 @@
-const faker = require('faker');
 const team = require('./team');
 const season = require('./season');
 const match = require('./match');

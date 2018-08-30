@@ -1,6 +1,4 @@
-
 const faker = require('faker');
-
 
 const userGet = (req, res) => {
   const data = ({

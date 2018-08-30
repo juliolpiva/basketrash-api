@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 routes(app);
 
-const server = app.listen(port, () => {
+app.listen(port, () => {
   console.log('Basketrash running on port 3000!');
 });
 

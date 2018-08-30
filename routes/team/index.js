@@ -1,6 +1,4 @@
-
 const faker = require('faker');
-
 
 const teamGet = (req, res) => {
   const company = faker.company.companyName();
